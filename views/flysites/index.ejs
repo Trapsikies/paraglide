@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flysites</title>
+</head>
+<body>
+    <h1>All flysites</h1>
+    <div>
+        <a href="/flysites/new">Add new</a>
+    </div>
+    <ul>
+        <% for(let flysites of flysite) {%>
+         <li><a href="flysites/<%=flysites._id %>"><%= flysites.title %></a> </li>
+         <% } %>   
+    </ul>
+</body>
+</html>

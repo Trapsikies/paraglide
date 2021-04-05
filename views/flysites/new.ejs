@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New flysite</title>
+</head>
+<body>
+    <form action="/flysites" method="POST">
+        <div>
+            <label for="title">Site Name</label>
+            <input type="text" name="flysite[title]" id="title">
+        </div>
+        <div>
+            <label for="location">Location</label>
+            <input type="text" name="flysite[location]" id="location">
+        </div>
+        <button>Add Flysite</button>
+    </form>
+    <a href="/flysites">All flysites</a>
+    
+</body>
+</html>

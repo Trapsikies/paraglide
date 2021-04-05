@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>edit flysite</title>
+</head>
+<body>
+    <h1>Edit Flysite</h1>
+    <form action="/flysites/<%=flysite._id%>?_method=PUT" method="POST">
+        <div>
+            <label for="title">Site Name</label>
+            <input type="text" name="flysite[title]" id="title" value="<%= flysite.title %> ">
+        </div>
+        <div>
+            <label for="location">Location</label>
+            <input type="text" name="flysite[location]" id="location" value="<%= flysite.location %> ">
+        </div>
+        <button>Update Flysite</button>
+    </form>
+    <a href="/flysites/<%=flysite._id%> ">Back to flysite</a>
+    
+</body>
+</html>
